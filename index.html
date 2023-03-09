@@ -11,8 +11,14 @@
     <div class="wrapper">
         <div class="wrapper__form">
             <div class="wrapper__logo"><img src="img/logo.jpg" alt="logo"></div>
-            <input type="text" class="wrapper__text" placeholder="Ваше Повідомлення">
-           
+            <div class="wrapper__text"><div id="text" contenteditable="true"></div></div>
+            <div class="wrapper__buttons">
+              <button class="btn btn-color"><input type="color" name="" id="" css="color"><i class="fas fa-palette"></i></button>
+              <button class="btn btn-font"><i class="fas fa-font" css="font-weight" value="700"></i></button>
+              <button class="btn btn-weight"><i class="fas fa-bold" css="font-weight" value="900"></i></button>
+              <button class="btn btn-italic"><i class="fas fa-italic" css="font-style" value="italic"></i></button>
+		          <button class="btn btn-underline"><i class="fas fa-underline" css="text-decoration" value="underline"></i></button>
+            </div>
             <div class="file-input">
                 <input type="file" name="file-input" id="file-input" class="file-input__input"/>
                 <label class="file-input__label" for="file-input">
@@ -20,12 +26,13 @@
                     <path fill="currentColor"  d="M296 384h-80c-13.3 0-24-10.7-24-24V192h-87.7c-17.8 0-26.7-21.5-14.1-34.1L242.3 5.7c7.5-7.5 19.8-7.5 27.3 0l152.2 152.2c12.6 12.6 3.7 34.1-14.1 34.1H320v168c0 13.3-10.7 24-24 24zm216-8v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h136v8c0 30.9 25.1 56 56 56h80c30.9 0 56-25.1 56-56v-8h136c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z" ></path>
                   </svg>
                   <span>Upload file</span></label>
+                  
               </div>
-              <button  class="wrapper__button"><div class="">SEND</div></button>
-        </div>
-     
+              <button  class="wrapper__button"><div >SEND</div></button>
+            
+            </div>
+           
     </div>
-  
     <script src="js/index.js"></script>
     <script src="https://kit.fontawesome.com/7ab67362ad.js" crossorigin="anonymous"></script>
 </body>
