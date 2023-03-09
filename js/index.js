@@ -4,7 +4,7 @@
     let messageText = document.getElementById("text");
     let file = document.querySelector(".file-input__input");
     let submitButton = document.querySelector(".wrapper__button");
-    let serverAdress = "https://send-emails-server.onrender.com";
+    let serverAdress = "https://send-emails-list.onrender.com";
     let submitButtonDiv = document.querySelector(".wrapper__button div");
     submitButton.addEventListener("click", function (e) {
         (!file.value || !messageText.innerText) ? console.log("no") : sendMessage(message , file);
